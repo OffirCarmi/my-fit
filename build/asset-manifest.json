@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/my-fit/static/css/main.856eeab3.css",
+    "main.js": "/my-fit/static/js/main.feb37fe4.js",
+    "index.html": "/my-fit/index.html",
+    "main.856eeab3.css.map": "/my-fit/static/css/main.856eeab3.css.map",
+    "main.feb37fe4.js.map": "/my-fit/static/js/main.feb37fe4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.856eeab3.css",
+    "static/js/main.feb37fe4.js"
+  ]
+}

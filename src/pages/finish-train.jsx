@@ -14,7 +14,7 @@ export const FinishTrain = () => {
 
   useEffect(() => {
     stopTimer(); // בדיקה ואתחול נתונים בטעינה ראשונית
-  }, []);
+  }, [stopTimer]);
 
   // פונקציה להתחלת/הפסקת הטיימר
   const handleStartStop = () => {

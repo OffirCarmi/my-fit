@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { persist } from "zustand/middleware";
+// import { persist } from "zustand/middleware";
 import { utilService } from "../services/util.service";
 
 import { exercisesDB } from "../data/exercises-db";
