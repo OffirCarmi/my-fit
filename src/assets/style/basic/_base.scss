@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+    background-color: white;
+}
+
+body {
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+    direction: rtl;
+    overflow-x: hidden;
+    max-width: 500px;   // לוודא רוחב טיימר
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+a {
+    // color: $txt;
+    text-decoration: none;
+
+    &.active {
+        // color: $brand;
+    }
+}
+
+button {
+    cursor: pointer;
+    border-radius: 5px;
+    min-height: 40px;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+img {
+    height: 100%;
+    object-fit: cover;
+}
+
+input,
+select {
+    border: none;
+    border-bottom: 1px solid $light-grey;
+    outline: none;
+    font-family: sans-serif;
+    margin: 0;
+    background: transparent;
+    color: $yellow;
+    font-family: inherit;
+    resize: none; /* מונע שינוי גודל על ידי המשתמש */
+    outline: none; /* מבטל את ההדגשה סביב השדה כאשר עורכים אותו */
+    option {
+        background-color: $light-grey;
+        color: $dark-grey;
+    }
+}
+
+/* עבור דפדפנים מבוססי WebKit (כגון Chrome, Safari, Edge) */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* עבור Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+textarea {
+    border: 1px solid $light-grey;
+    background: transparent;
+    color: $yellow;
+    font-family: inherit;
+    resize: none; /* מונע שינוי גודל על ידי המשתמש */
+    outline: none; /* מבטל את ההדגשה סביב השדה כאשר עורכים אותו */
+}
+
+hr {
+    margin: 25px 0;
+    border: 0;
+    // border-bottom: 1px solid $txt;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+// @media (min-width: 641px) {
+//     ::-webkit-scrollbar {
+//         display: block;
+//         width: 16px;
+//         border-radius: 10px;
+//     }
+
+//     ::-webkit-scrollbar-track {
+//         background: $g4-opc;
+//         border-radius: 10px;
+//     }
+
+//     ::-webkit-scrollbar-thumb {
+//         background: $txt;
+//         border-radius: 10px;
+//     }
+// }

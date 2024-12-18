@@ -1,0 +1,59 @@
+.pick-train {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+        color: white;
+        padding: 25px 0 50px;
+    }
+
+    .train-program-list {
+        display: flex;
+        gap: 45px;
+        color: $light-grey;
+
+        .train-box {
+            // width: 125px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+
+            h4.area-name {
+                font-size: 26px;
+                color: $yellow;
+            }
+
+            .area-list {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 13px;
+                width: 125px;
+                height: 125px;
+                border: 1px solid $yellow;
+                border-radius: 10px;
+                color: white;
+
+                li {
+                    h4 {
+                        font-weight: 300;
+                    }
+                }
+            }
+
+            &:hover {
+                h4 {
+                    color: $yellow;
+                }
+                .area-list {
+                    background-color: $dark-grey;
+                    border: 1px solid $dark-grey;
+                    color: $yellow;
+                }
+            }
+        }
+    }
+}

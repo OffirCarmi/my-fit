@@ -1,0 +1,166 @@
+{
+  "areas": [
+    {
+      "id": 101,
+      "name": "רגליים",
+      "exercisesPerTrain": 3
+    },
+    { "id": 102, "name": "ישבן", "exercisesPerTrain": 2 },
+    { "id": 103, "name": "חזה", "exercisesPerTrain": 4 },
+    { "id": 104, "name": "גב", "exercisesPerTrain": 3 },
+    {
+      "id": 105,
+      "name": "כתפיים",
+      "exercisesPerTrain": 4
+    },
+    {
+      "id": 106,
+      "name": "יד אחורית",
+      "exercisesPerTrain": 3
+    },
+    {
+      "id": 107,
+      "name": "יד קידמית",
+      "exercisesPerTrain": 3
+    },
+    { "id": 108, "name": "בטן", "exercisesPerTrain": 3 },
+    {
+      "id": 109,
+      "name": "גב תחתון",
+      "exercisesPerTrain": 1
+    }
+  ],
+
+  "exercises": [
+    {
+      "id": "asmn8G",
+      "name": "סקוואט חופשי",
+      "bodyAreaId": 101,
+      "dateCreated": 2222,
+      "dateModified": 1733269253680,
+      "weight": 10,
+      "notes": ["להכניס בטן פנימה"],
+      "images": [],
+      "lastTimeUsed": 727212112,
+      "skipCounter": 0
+    },
+    {
+      "id": "n5g8G",
+      "name": "היפ טראסט",
+      "bodyAreaId": 102,
+      "dateCreated": 2222,
+      "dateModified": 88888,
+      "weight": 15,
+      "notes": ["חגורה על האגן"],
+      "images": [],
+      "lastTimeUsed": 727212112,
+      "skipCounter": 0
+    },
+    {
+      "id": "98sj8",
+      "name": "שכיבות סמיכה",
+      "bodyAreaId": 103,
+      "dateCreated": 2222,
+      "dateModified": 88888,
+      "weight": 10,
+      "notes": ["ידיים צמודות לשכמות"],
+      "images": [],
+      "lastTimeUsed": 727212112,
+      "skipCounter": 0
+    },
+    {
+      "id": "sdsaG",
+      "name": "פולי חתירה",
+      "bodyAreaId": 104,
+      "dateCreated": 2222,
+      "dateModified": 88888,
+      "weight": 10,
+      "notes": ["ידיים צמודות למותן"],
+      "images": [],
+      "lastTimeUsed": 727212112,
+      "skipCounter": 0
+    },
+    {
+      "id": "a768G",
+      "name": " לחיצת כתפיים",
+      "bodyAreaId": 105,
+      "dateCreated": 2222,
+      "dateModified": 88888,
+      "weight": 10,
+      "notes": ["ידיים ישרות"],
+      "images": [],
+      "lastTimeUsed": 727212112,
+      "skipCounter": 0
+    },
+    {
+      "id": "a23FO",
+      "name": "מרסק גולגולות",
+      "bodyAreaId": 106,
+      "dateCreated": 2222,
+      "dateModified": 88888,
+      "weight": 10,
+      "notes": [" בטן פנימה"],
+      "images": [],
+      "lastTimeUsed": 727212112,
+      "skipCounter": 0
+    },
+    {
+      "id": "5438G",
+      "name": "כפיפות פולי",
+      "bodyAreaId": 107,
+      "dateCreated": 2222,
+      "dateModified": 88888,
+      "weight": 10,
+      "notes": ["ידיים מקבילות לתחת"],
+      "images": [],
+      "lastTimeUsed": 727212112,
+      "skipCounter": 0
+    },
+    {
+      "id": "3453F",
+      "name": "כפיפות בטן",
+      "bodyAreaId": 108,
+      "dateCreated": 2222,
+      "dateModified": 88888,
+      "weight": 10,
+      "notes": ["להכניס בטן פנימה"],
+      "images": [],
+      "lastTimeUsed": 727212112,
+      "skipCounter": 0
+    },
+    {
+      "id": "SUM21",
+      "name": "סופרמן",
+      "bodyAreaId": 109,
+      "dateCreated": 2222,
+      "dateModified": 88888,
+      "weight": 10,
+      "notes": ["הידיים קדימה"],
+      "images": [],
+      "lastTimeUsed": 727212112,
+      "skipCounter": 0
+    }
+  ],
+
+  "trainPrograms": [
+    { "id": "sd7ns", "name": "A", "areas": [101, 102, 103, 106, 109] },
+    { "id": "xc0sL", "name": "B", "areas": [104, 105, 107, 108] }
+  ],
+
+  "currTrain": {
+    "id": "djn7S",
+    "dateCreated": 2213123324231,
+    "trainType": "A",
+    "exercises": ["asmn8G", "5xMs2", "sd91N", "cJK4l", "XM112"],
+    "currEx": "asmn8G"
+  },
+
+  "trainsHistory": [
+    {
+      "trainId": "po09D",
+      "dateCreated": 432423423,
+      "trainType": "A",
+      "exs": ["5xMs2", "sd91N", "cJK4l", "XM112"]
+    }
+  ]
+}

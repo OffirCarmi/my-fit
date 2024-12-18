@@ -1,0 +1,67 @@
+.exercises {
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+
+    button {
+        margin-bottom: 25px;
+        background-color: $dark-grey;
+        color: $yellow;
+        // color: white;
+        font-weight: normal;
+        font-size: 16px;
+        width: 150px;
+        // align-self: center;
+    }
+
+    ul.area-list {
+        > *:not(:last-child) {
+            margin-bottom: 15px;
+        }
+
+        li.area-preview {
+            border: 1px solid $dark-grey;
+            border-radius: 5px;
+
+            .area-title {
+                display: flex;
+                justify-content: center;
+                background-color: $dark-grey;
+                padding: 5px 15px;
+                border-radius: 5px 5px 0 0;
+
+                h4 {
+                    color: $yellow;
+                }
+                // svg {
+                //     height: 20px;
+                //     fill: currentColor;
+                // }
+            }
+            .ex-list {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                padding: 10px;
+                gap: 15px;
+
+                li.exercise-name {
+                    color: white;
+                    cursor: pointer;
+                    position: relative; // כדי ליישם ::after
+
+                    &::after {
+                        content: "|";
+                        position: absolute;
+                        left: -10px; // מרווח לקו ההפרדה
+                        color: $yellow;
+                    }
+
+                    &:last-child::after {
+                        content: ""; // מסיר את הקו אחרי האלמנט האחרון
+                    }
+                }
+            }
+        }
+    }
+}

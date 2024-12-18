@@ -1,0 +1,177 @@
+section.curr-train {
+    padding: 25px 25px 120px;
+    background: linear-gradient(180deg, $dark-grey 40%, $light-grey 100%);
+    flex-grow: 1;
+    min-height: calc(100vh - 100px); /* גובה מסך פחות גובה הדר */
+    background-attachment: fixed; /* הגריידיאנט לא יזוז */
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    position: relative;
+
+    .progress {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        .progress-container {
+            width: 100%;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 15px;
+            position: relative;
+
+            .progress-bar {
+                height: 100%;
+                background-color: $yellow;
+                text-align: center;
+                line-height: 15px;
+                color: white;
+                font-weight: bold;
+                border-radius: 10px;
+                transition: width 0.3s ease-in-out;
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
+
+        .area-list {
+            display: flex;
+            justify-content: space-between;
+
+            .area-preview {
+                .area-title {
+                    h4 {
+                        font-weight: 100;
+
+                        &.selected {
+                            color: $yellow;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .exercise-in-train {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        h3.title {
+            color: $yellow;
+            font-size: 24px;
+        }
+
+        form.exercise-details {
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+            gap: 25px;
+
+            label.number {
+                width: 35%;
+                display: flex;
+
+                input {
+                    border: none;
+                    text-align: right; /* עושה שהמספר יהיה ממויין מימין */
+                    width: 90px;
+                    font-size: 40px;
+                }
+
+                .unit {
+                    color: $yellow;
+                    display: flex;
+                    align-items: flex-end;
+                    padding-bottom: 5px;
+                }
+            }
+
+            label.textarea {
+                width: 65%;
+
+                textarea {
+                    width: 100%;
+                    color: white;
+                    border: 1px solid $light-grey;
+                    font-size: 16px;
+                    font-weight: 100;
+                }
+            }
+        }
+        .exercise-update {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            height: 40px;
+
+            button {
+                background: black;
+                color: $yellow;
+                padding: 0 20px;
+                font-size: 16px;
+                font-weight: 100;
+
+                display: none;
+                &.edited {
+                    display: block;
+                }
+            }
+        }
+
+        .exercise-imgs {
+            display: flex;
+            flex-direction: column;
+            video.link {
+                height: 200px;
+            }
+        }
+    }
+
+    .btns {
+        display: flex;
+        justify-content: space-between;
+
+        button {
+            width: 150px;
+            background-color: $dark-grey;
+        }
+
+        button.other {
+            font-weight: 100;
+            color: $light-grey;
+        }
+
+        button.done {
+            color: $yellow;
+            margin: 0 auto;
+        }
+    }
+
+    div.timer {
+        position: fixed; // מקבע את הטיימר ביחס למסך
+        bottom: 0; // ממקם אותו בתחתית המסך הנראה לעין
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 100%; // מאפשר ירושה של הרוחב המוגבל של body
+        max-width: 500px;
+        background-color: black;
+        text-align: center;
+        z-index: 9999; // מבטיח שהאלמנט יהיה מעל כל האחרים
+        height: 100px;
+        line-height: 100px;
+
+        span.timer {
+            color: $yellow;
+            font-size: 45px;
+            font-weight: normal;
+        }
+    }
+}

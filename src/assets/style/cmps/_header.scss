@@ -1,0 +1,17 @@
+header {
+    text-align: center;
+    padding: 30px 15px 15px;
+    color: $yellow;
+    border-bottom: 3px solid $yellow;
+    background-color: $dark-grey;
+    height: 100px;
+
+    h1 {
+        cursor: pointer;
+        font-weight: 900;
+        font-size: 40px;
+        color: $yellow; /* צבע הטקסט */
+        // -webkit-text-stroke: 1px white; /* מסגרת צהובה בעובי של 3 פיקסלים */
+        // text-shadow: 1px 1px 5px rgba(255, 215, 0, 0.6); /* צל אפל */
+    }
+}

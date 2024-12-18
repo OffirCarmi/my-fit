@@ -1,0 +1,139 @@
+.exercise-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px;
+
+    h3 {
+        // color: $light-grey;
+    }
+
+    form {
+        padding: 15px 25px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: $light-grey;
+
+            > * {
+                width: 200px;
+                padding: 5px;
+                font-size: 16px;
+            }
+
+            select,
+            textarea {
+                font-family: inherit;
+                resize: none; /* מונע שינוי גודל על ידי המשתמש */
+                outline: none; /* מבטל את ההדגשה סביב השדה כאשר עורכים אותו */
+            }
+            select {
+                margin-left: 100px;
+                width: 100px;
+            }
+
+            textarea {
+                margin-top: 10px;
+            }
+        }
+
+      
+        input.number {
+            margin-left: 135px;
+            width: 65px;
+        }
+
+        position: relative;
+
+        span.unit {
+            position: absolute;
+            left: -35px;
+            top: 50%;
+            transform: translateY(-50%);
+            pointer-events: none; /* מונע לחיצה על הטקסט */
+            color: $light-grey; /* צבע של היחידה */
+            font-size: 14px;
+        }
+   
+
+        .imgs {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            .img {
+                display: flex; // הפיכת ההורה לקונטיינר פלקס
+                flex-direction: column; // מסדר את הילדים אחד מתחת לשני
+                align-items: center; // ממרכז אופקית את הילדים
+                justify-content: center; // ממרכז אנכית את הילדים
+                width: 100%; // הורה תופס את כל הרוחב
+                // height: 100%;
+
+                // * > {
+                //     width: 100%; // הילדים תופסים את כל הרוחב של ההורה
+                //     text-align: center;
+                // }
+                label {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    color: $light-grey;
+                }
+                video {
+                    height: 100px;
+                    margin: 0 auto;
+                }
+            }
+
+            button.add-img {
+                background-color: $dark-grey;
+                color: $yellow;
+                font-weight: normal;
+                font-size: 16px;
+            }
+        }
+
+        .btns-box {
+            // direction: ltr;
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+
+            > * {
+                flex: 1;
+                margin: 0 5px;
+                font-weight: normal;
+                font-size: 16px;
+            }
+
+            .btn-save {
+                background-color: $green;
+                color: white;
+
+                &:disabled {
+                    color: black;
+                    background-color: black;
+                    border: none;
+                    cursor: default;
+                }
+            }
+
+            .btn-remove {
+                background-color: $red;
+                color: white;
+            }
+
+            .btn-cancel {
+                background-color: $light-grey;
+                color: $dark-grey;
+            }
+        }
+    }
+}

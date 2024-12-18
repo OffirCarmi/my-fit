@@ -1,0 +1,54 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* ממרכז את האלמנטים אנכית */
+    align-items: center; /* ממרכז את האלמנטים אופקית */
+    gap: 50px;
+    padding: 50px 0;
+
+    h2 {
+        padding-bottom: 20px;
+        letter-spacing: 0.25px;
+        line-height: 1.5;
+        color: white;
+        font-size: 32px;
+        text-shadow: 1px 1px 5px $yellow;
+        text-align: center;
+    }
+
+    svg {
+        fill: $yellow;
+        height: 150px;
+        margin: -40px;
+    }
+
+    .btns-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start; // שומר על יישור האלמנטים לגובהם המקורי
+        gap: 35px;
+        padding: 0 50px;
+
+        button {
+            width: 125px;
+            height: 75px;
+            font-size: 18px;
+            font-weight: 600;
+            background-color: $dark-grey;
+        }
+
+        button.new-train {
+            color: $yellow;
+        }
+
+        button.curr-train {
+            color: white;
+            background: linear-gradient(180deg, $dark-grey 0%, $light-grey 100%);
+        }
+
+        button.all-exercises {
+            color: $light-grey;
+        }
+    }
+}
